@@ -1,0 +1,25 @@
+- class_name: 友情链接
+  class_desc: 那些人，那些事
+  link_list:
+    - name: 唐志远の博客
+      link: https://tzy1997.com/
+      avatar: https://bu.dusays.com/2022/01/14/cd5ffd485f867.jpg
+      descr: 古今之成大事者，不惟有超世之才，亦必有坚忍不拔之志。
+    - name: 魏志超の博客
+      link: https://wzzc-9.github.io/
+      avatar: 
+      descr: 学无止境
+- class_name: 友情链接
+  class_desc: 值得推荐的网站
+  link_list:
+    - name: 看板娘之折腾
+      link: https://www.cnblogs.com/c10udlnk/p/14727173.html
+      avatar: 
+      descr: 人生在于折腾
+- class_name: 网站
+  class_desc: 值得推荐的网站
+  link_list:
+    - name: 可选链操作符
+      link: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+      avatar: 
+      descr: 了解可选链操作符
