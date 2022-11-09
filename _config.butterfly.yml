@@ -35,8 +35,9 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  # fab fa-github: https://github.com/xxxxx || Github
-  fas fa-envelope: mailto:xxxxxx@gmail.com || Email
+  fa-brands fa-weixin: https://bu.dusays.com/2022/10/31/635f95ef6afb7.jpg || Wechat
+  # fas fa-envelope: xiuji957@163.com || Email
+  fa-sharp fa-solid fa-music: https://music.163.com/#/user/home?id=429392391 || Music
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
@@ -891,10 +892,13 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
     - <link rel="stylesheet" href="/css/style_v1.css?v1">
     - <link rel="stylesheet" href="/css/universe.css">
-
+    - <link rel="stylesheet" href="/css/font.css">
+    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
+    - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/tzy13755126023/BLOG_SOURCE/css/function.min.css">
   bottom:
     # - <script src="xxxx"></script>
     - <canvas id="universe"></canvas>
+    - <script defer src="/js/jquery-3.5.1.min.js"></script>
     # 星空背景
     - <script defer src="/js/universe.js"></script>
 

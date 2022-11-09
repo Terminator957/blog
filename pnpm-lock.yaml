@@ -2,6 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   hexo: ^6.3.0
+  hexo-asset-img: ^1.0.0
+  hexo-deployer-git: ^3.0.0
   hexo-generator-archive: ^2.0.0
   hexo-generator-category: ^2.0.0
   hexo-generator-index: ^3.0.0
@@ -15,6 +17,8 @@ specifiers:
 
 dependencies:
   hexo: 6.3.0
+  hexo-asset-img: 1.0.0
+  hexo-deployer-git: 3.0.0
   hexo-generator-archive: 2.0.0
   hexo-generator-category: 2.0.0
   hexo-generator-index: 3.0.0
@@ -667,6 +671,10 @@ packages:
       function-bind: 1.1.1
     dev: false
 
+  /hexo-asset-img/1.0.0:
+    resolution: {integrity: sha512-9kzp+LINw15ouVrLvCdSLIKGBVhZ/LAJEvWQfowbyXi0OW2jJaJHkSkWcJ6udO4OEaxLvM1ffK+8IXucMAKawQ==}
+    dev: false
+
   /hexo-cli/4.3.0:
     resolution: {integrity: sha512-lr46h1tK1RNQJAQZbzKYAWGsmqF5DLrW6xKEakqv/o9JqgdeempBjIm7HqjcZEUBpWij4EO65X6YJiDmT9LR7g==}
     engines: {node: '>=10.13.0'}
@@ -682,6 +690,20 @@ packages:
       minimist: 1.2.7
       resolve: 1.22.1
       tildify: 2.0.0
+    dev: false
+
+  /hexo-deployer-git/3.0.0:
+    resolution: {integrity: sha512-U2Xewjab+rvUDNTcuYYnOxitkDXL3f5VMUH32jKDHs3OC4YFVGRoEaTTDVHskqr3KRi78Wohjc6BSRHOoG3oxA==}
+    engines: {node: '>=8.6.0'}
+    dependencies:
+      bluebird: 3.7.2
+      chalk: 4.1.2
+      hexo-fs: 3.1.0
+      hexo-util: 2.7.0
+      moment: 2.29.4
+      nunjucks: 3.2.3
+    transitivePeerDependencies:
+      - chokidar
     dev: false
 
   /hexo-front-matter/3.0.0:
