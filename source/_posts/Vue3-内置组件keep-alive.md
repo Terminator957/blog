@@ -1,7 +1,6 @@
 ---
 title: Vue3-内置组件keep-alive
 date: 2022-08-07 16:22:12
-sticky: 14 # 设置文章置顶，越大优先级越高
 cover: /img/vue3.jpeg
 top_img: /img/galaxy.jpg
 tags:

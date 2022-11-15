@@ -1,7 +1,6 @@
 ---
 title: Vue3-依赖注入Provide、Inject
 date: 2022-08-10 16:22:12
-sticky: 17 # 设置文章置顶，越大优先级越高
 cover: /img/vue3.jpeg
 top_img: /img/galaxy.jpg
 tags:

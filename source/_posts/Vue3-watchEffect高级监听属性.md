@@ -1,7 +1,6 @@
 ---
 title: Vue3-watchEffect高级监听属性
 date: 2022-07-30 16:22:12
-sticky: 6 # 设置文章置顶，越大优先级越高
 cover: /img/vue3.jpeg
 top_img: /img/galaxy.jpg
 tags:

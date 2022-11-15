@@ -1,7 +1,6 @@
 ---
 title: Vue3-异步组件、代码分包、suspense
 date: 2022-08-05 16:22:12
-sticky: 12 # 设置文章置顶，越大优先级越高
 cover: /img/vue3.jpeg
 top_img: /img/galaxy.jpg
 tags:

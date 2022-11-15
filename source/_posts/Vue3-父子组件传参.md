@@ -1,7 +1,6 @@
 ---
 title: Vue3-父子组件传参
 date: 2022-08-01 16:22:12
-sticky: 8 # 设置文章置顶，越大优先级越高
 cover: /img/vue3.jpeg
 top_img: /img/galaxy.jpg
 tags:

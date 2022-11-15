@@ -1,7 +1,6 @@
 ---
 title: Vue3-ref全家桶
 date: 2022-07-25 16:22:12
-sticky: 1 # 设置文章置顶，越大优先级越高
 cover: /img/vue3.jpeg
 top_img: /img/galaxy.jpg
 tags:

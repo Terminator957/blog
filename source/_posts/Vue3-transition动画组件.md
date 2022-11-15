@@ -1,7 +1,6 @@
 ---
 title: Vue3-transition动画组件
 date: 2022-08-08 16:22:12
-sticky: 15 # 设置文章置顶，越大优先级越高
 cover: /img/vue3.jpeg
 top_img: /img/galaxy.jpg
 tags:

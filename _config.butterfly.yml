@@ -574,12 +574,12 @@ fireworks:
 
 # Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
 click_heart:
-  enable: false
-  mobile: false
+  enable: true
+  mobile: true
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
 ClickShowText:
-  enable: true
+  enable: false
   text:
     - 富强
     - 民主
@@ -685,7 +685,7 @@ aside:
       link: https://github.com/Terminator957
   card_announcement: # 公告
     enable: true
-    content: 是真的菜我
+    content: 文学，禅学及电脑维修
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
