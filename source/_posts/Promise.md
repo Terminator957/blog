@@ -1,7 +1,6 @@
 ---
 title: Promise
 date: 2022-11-14 15:49:06
-sticky: 1 # 设置文章置顶，越大优先级越高
 cover: /img/study.jpeg
 top_img: /img/study.jpeg
 tags:
@@ -76,23 +75,7 @@ p1.catch(err => console.log(err)).finally(() => console.log('finally')); //无�
 
    - 如果回调函数没有 return 值，根据 js 中的函数的定义，函数的默认 return 值为 undefined，而 undefined 也是 非promise类型的值，所以结果同上。
 
-   ```js
-   
-   ```
-
-   
-
-   - 1
-   - 2
-   - 23
-
-
-
-
-
-
-
-
+   - 如果回调函数的 return 值 是 promise对象 ，则 then 方法返回的promise对象的状态则取决于这个 return 中的 promise对象的内部状态， 内部为resolve, 则 then 返回的状态为fulfilled，内部为reject，则 then 返回的状态为rejected，状态值为resolve / reject 调用时传入的实参。
 
 **Promise.all**
 
@@ -217,5 +200,63 @@ p.then(null, function (s) {
 
 ## 三、Promise存在的意义
 
-众所周知js执行是从上往下同步执行，当异步程序运行未结束时，下面程序全都会被异步操作阻塞，运用Promise可以完美解决js的同步阻塞。
+1. 众所周知js执行是从上往下同步执行，当异步程序运行未结束时，下面程序全都会被异步操作阻塞，运用Promise可以完美解决js的同步阻塞。
+2. 回调地狱，业务场景中经常需要将一个接口中的返回值作为下一个接口的入参，当这样的步骤变多时，函数一层套一层便会产生回调地狱；这样的代码可读性可维护性都很差，举个栗子：
+
+```js
+setTimeout(function () {  //第一层
+            console.log(111);
+            setTimeout(function () {  //第二层
+                console.log(222);
+                setTimeout(function () {   //第三层
+                    console.log(333);
+                }, 1000)
+            }, 2000)
+        }, 3000)
+```
+
+运用Promise可以增加多层嵌套时代码的可读性和可维护性,再举个栗子：
+
+```js
+/*
+ * @Description: 
+ * @Author: xiuji
+ * @Date: 2022-11-14 10:05:13
+ * @LastEditTime: 2022-11-15 20:09:59
+ * @LastEditors: Do not edit
+ */
+const getData = url => {
+    return new Promise((resolve, reject) => {
+        // 模拟调用接口获取参数
+        setTimeout(() => {
+            if (url.includes('/api/test')) {
+                resolve(url)
+            }
+            reject('请求错误')
+        }, 2000);
+    })
+}
+
+getData('/api/test').then(res => {
+    getData(`${res}/test1`).then(res => {
+        getData(`${res}/test2`).then(res => console.log(res))
+    })
+})
+// 上面的写法依然不够优雅，可以优化如下
+getData('/api/test').then(res => {
+    return getData(`${res}/test1`)
+}).then(res => {
+    return getData(`${res}/test2`)
+}).then(res => console.log(res, '优化后'))
+// 最终解决回调地狱的办法 promise配合async/await使用
+async function getUrlData() {
+    const res = await getData('/api/test')
+    const res1 = await getData(`${res}/test1`)
+    const res2 = await getData(`${res1}/test2`)
+    console.log(res2,'最终');
+}
+getUrlData()
+```
+
+**Promise 存在的意义是异步问题同步化解决方案**
 
