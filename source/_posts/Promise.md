@@ -1,8 +1,8 @@
 ---
 title: Promise
 date: 2022-11-14 15:49:06
-cover: /img/study.jpeg
-top_img: /img/study.jpeg
+cover: https://bu.dusays.com/2022/11/16/6374528071f3b.jpeg
+top_img: https://bu.dusays.com/2022/11/16/6374528071f3b.jpeg
 tags:
 - 前端进阶
 categories:

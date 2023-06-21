@@ -2,7 +2,7 @@
 title: Vue3-插槽
 date: 2022-08-04 16:22:12
 cover: /img/vue3.jpeg
-top_img: /img/galaxy.jpg
+top_img: https://bu.dusays.com/2022/07/07/62c6f3d6351af.jpg
 tags:
 - Vue3
 categories:
@@ -111,7 +111,7 @@ const changeSlot = () => {
 
 作用域插槽
 
-子组件动态绑定参数，派发给父组件的slot去使用
+父组件动态绑定参数，派发给父组件的slot去使用
 
 ```vue
 <main class="main">
@@ -124,7 +124,7 @@ const changeSlot = () => {
 </main>
 ```
 
-父组件通过结构方式取值，可传多个参数
+子组件内通过结构方式取值，可传多个参数
 
 ```vue
 <template #default="{data,length}">

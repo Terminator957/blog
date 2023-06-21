@@ -1,6 +1,7 @@
 ---
 title: 关于本人
 date: 2022-10-14 16:42:04
+top_img: https://bu.dusays.com/2022/07/17/62d419019ddf2.jpg
 type: "about"
 layout: "about"
 ---
@@ -13,7 +14,7 @@ layout: "about"
 
 ```yaml
 Name: Xiuji(汪修稷)
-Age: 25
+Age: 26
 Address: Nanjing
 Github: https://github.com/Terminator957
 Blog: https://www.xiuji957.cn/

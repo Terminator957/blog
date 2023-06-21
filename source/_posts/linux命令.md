@@ -5,7 +5,7 @@ tags:
 - Linux
 categories:
 - Linux
-cover: /img/linux.png
+cover: https://bu.dusays.com/2022/11/16/637452ba0ed0b.png
 ---
 
 #### 1、cd

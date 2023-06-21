@@ -2,7 +2,7 @@
 title: Vue3-watchEffect高级监听属性
 date: 2022-07-30 16:22:12
 cover: /img/vue3.jpeg
-top_img: /img/galaxy.jpg
+top_img: https://bu.dusays.com/2022/07/07/62c6f3d6351af.jpg
 tags:
 - Vue3
 categories:

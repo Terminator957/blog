@@ -2,7 +2,7 @@
 title: Vue3-mitt
 date: 2022-11-10 15:51:10
 cover: /img/vue3.jpeg
-top_img: /img/galaxy.jpg
+top_img: https://bu.dusays.com/2022/07/07/62c6f3d6351af.jpg
 tags:
 - Vue3
 categories:
